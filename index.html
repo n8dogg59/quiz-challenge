@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz Challenge</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- Homepage section-->
+    <section id="homepage"> 
+        <header>
+            <p>View high score</p> <!-- will need this to link to the high score page.  nav element? -->
+            <p>Time: 0</p><!-- Ideally this would just be left out of the homepage section--> 
+        </header>
+        <main>
+            <h2>Coding Quiz Challenge</h2>
+            <p>
+                Press the start button to start the quiz.
+            </p>
+            <button id="startBtn" type="button">Start Quiz</button>
+        </main>
+    </section>
+   
+    <!-- Quiz page section-->
+    <section id="quiz"> 
+        <header>
+            <p>View high score</p> <!-- will need this to link to the high score page.  nav element? -->
+            <p>Time: 0</p> <!-- populate this with a funtion in js -->
+        </header>
+        <main>
+            <h2 id="question">
+                <!-- The question will be displayed here -->
+            </h2>
+            <ul>
+                <li class="answer" id="answer-a"></li> <!-- The four answers to the question-->
+                <li class="answer" id="answer-b"></li> <!-- these will have to be populated from the js-->
+                <li class="answer" id="answer-c"></li> <!-- should these be buttons intead of li items and then use flex to align them-->
+                <li class="answer" id="answer-d"></li>
+            </ul>
+            <p id="right-wrong">
+                <!-- right or wrong will need to display on the next question after button is clicked-->
+                <!-- not sure how to do this, guessing this <p> element would be added in js file after the button is clicked-->
+            </p>
+        </main>
+    </section>
+    
+    <!-- Quiz complete section -->
+    <section id="complete"> 
+        <header>
+            <p>View high score</p> <!-- will need this to link to the high score page.  nav element? -->
+            <p>Time: 0</p><!-- This should be left off the page when the quiz is over--> 
+        </header>
+        <main>
+            <h2>All done!</h2>
+            <p>
+                Your final score is (populate score here)<!-- somehow need to populate score -->
+            </p>
+            <form class="entered">
+                <label for="initials">Enter Initials: </label>
+                <input type="text" id="initials" name="initials">
+                <input type="submit" id="initialBtn" value="Submit"><!-- should add the initials and to an array in js file-->
+            </form>
+        </main>
+    </section>
+
+    <!-- High Score Section-->
+    <section id="high-scores"> 
+        <main>
+            <h2>High Scores</h2>
+            <ul class="high-list">
+                <li class="high-list-item" id="high-list-item">
+                    <!-- populate the high score list from an array in js file -->
+                </li>
+            </ul>
+            <button type="button" id="homepageBtn">Homepage</button>
+            <button type="button" id="clear-scores">Clear high score</button> 
+        </main>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

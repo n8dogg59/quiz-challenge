@@ -1,0 +1,80 @@
+header {
+    display: flex;
+    padding: 50px 5%;
+}
+
+header p {
+    display: flex;
+    font-weight: lighter;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+#homepage main {
+    text-align: center;
+}
+
+#homepage main h2 {
+    font-size: 42px;
+}
+
+#homepage main p {
+    display: flex;
+    font-size: 24px;
+    padding: 0 25%;
+}
+
+#startBtn {
+    padding: 25px;
+    border-radius: 28px;
+    margin: 35px;
+}
+
+#quizMain {
+    text-align: left;
+    margin: 0 25%;
+}
+
+#question {
+    font-size: 32px;
+}
+
+#answerButtons {
+    flex: display;
+    flex-flow: column;
+}
+
+.answerBtn {
+    font-size: 25px;
+    padding: 8px;
+    margin: 15px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+#completeMain {
+    text-align: left;
+    margin: 0 25%;
+}
+
+#complete h2 {
+    font-size: 32px;
+}
+
+#complete form, p {
+    font-size: 24px;
+}
+
+#complete input {
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#scoreMain {
+    text-align: left;
+    margin: 0 25%;
+}
+
+#scoreMain h2 {
+    font-size: 32px;
+}

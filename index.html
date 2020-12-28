@@ -11,8 +11,7 @@
     <!-- Homepage section-->
     <section id="homepage"> 
         <header>
-            <p>View high score</p> <!-- will need this to link to the high score page.  nav element? -->
-            <p>Time: 0</p><!-- Ideally this would just be left out of the homepage section--> 
+            <div>View high score</div> <!-- will need this to link to the high score page.  nav element? -->
         </header>
         <main>
             <h2>Coding Quiz Challenge</h2>
@@ -24,20 +23,20 @@
     </section>
    
     <!-- Quiz page section-->
-    <section id="quiz"> 
+    <section id="quizPage"> 
         <header>
-            <p>View high score</p> <!-- will need this to link to the high score page.  nav element? -->
-            <p>Time: 0</p> <!-- populate this with a funtion in js -->
+            <div>View high score</div> <!-- will need this to link to the high score page.  nav element? -->
+            <div id="timer">Time: 0</div> <!-- populate this with a funtion in js -->
         </header>
         <main id="quizMain">
             <h2 id="question">
                 Sample question for formatting purposes.<!-- The question will be displayed here -->
             </h2>
             <div id="answerButtons">
-                <button class="answerBtn" id="a">sample a</button><br>
-                <button class="answerBtn" id="b">sample b</button><br>
-                <button class="answerBtn" id="c">sample c</button><br>
-                <button class="answerBtn" id="d">sample d</button><br>
+                <button class="answerBtn" id="answerA">sample a</button><br>
+                <button class="answerBtn" id="answerB">sample b</button><br>
+                <button class="answerBtn" id="answerC">sample c</button><br>
+                <button class="answerBtn" id="answerD">sample d</button><br>
             </div>
             <p id="right-wrong">
                 <!-- right or wrong will need to display on the next question after button is clicked-->
@@ -47,15 +46,15 @@
     </section>
     
     <!-- Quiz complete section -->
-    <section id="complete"> 
+    <section id="completePage"> 
         <header>
-            <p>View high score</p> <!-- will need this to link to the high score page.  nav element? -->
-            <p>Time: 0</p><!-- This should be left off the page when the quiz is over--> 
+            <div>View high score</div> <!-- will need this to link to the high score page.  nav element? -->
+            <div id="timer">Time: 0</div><!-- This should be left off the page when the quiz is over--> 
         </header>
         <main id="completeMain">
             <h2>All done!</h2>
             <p>
-                Your final score is (populate score here)<!-- somehow need to populate score -->
+                Your final score is: <span id="score">score.</span>
             </p>
             <form class="entered">
                 <label for="initials">Enter Initials: </label>
@@ -66,16 +65,17 @@
     </section>
 
     <!-- High Score Section-->
-    <section id="high-scores"> 
+    <section id="highScores"> 
         <main id="scoreMain">
             <h2>High Scores</h2>
-            <ul class="high-list">
-                <li class="high-list-item" id="high-list-item">
-                    <!-- populate the high score list from an array in js file -->
+            <ol type="1" id="highList">
+                <li class="highListItem" id="highListItem">
+                    <div id="highInitials"></div>
+                    <div id="highScore"></div>
                 </li>
-            </ul>
+            </ol>
             <button type="button" id="homepageBtn">Homepage</button>
-            <button type="button" id="clear-scores">Clear high score</button> 
+            <button type="button" id="clearScores">Clear high score</button> 
         </main>
     </section>
 

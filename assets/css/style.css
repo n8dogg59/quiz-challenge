@@ -30,6 +30,10 @@ header p {
     margin: 35px;
 }
 
+#quizPage {
+    display: none;
+}
+
 #quizMain {
     text-align: left;
     margin: 0 25%;
@@ -52,6 +56,10 @@ header p {
     width: 250px;
 }
 
+#completePage {
+    display: none;
+}
+
 #completeMain {
     text-align: left;
     margin: 0 25%;
@@ -68,6 +76,10 @@ header p {
 #completePage input {
     font-size: 18px;
     border-radius: 5px;
+}
+
+#highScores {
+    display: none;
 }
 
 #scoreMain {

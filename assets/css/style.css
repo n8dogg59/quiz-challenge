@@ -1,13 +1,13 @@
 header {
     display: flex;
     padding: 50px 5%;
+    justify-content: space-between;
 }
 
-header p {
+header div {
     display: flex;
     font-weight: lighter;
-    font-size: 14px;
-    justify-content: space-between;
+    font-size: 18px;
 }
 
 #homepage main {

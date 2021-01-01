@@ -11,7 +11,7 @@
     <!-- Homepage section-->
     <section id="homepage"> 
         <header>
-            <div>View high score</div> <!-- will need this to link to the high score page.  nav element? -->
+            <div id="highScorePage" onclick="">View high score</div> <!-- will need this to link to the high score page.  nav element? -->
         </header>
         <main>
             <h2>Coding Quiz Challenge</h2>
@@ -25,8 +25,8 @@
     <!-- Quiz page section-->
     <section id="quizPage"> 
         <header>
-            <div>View high score</div> <!-- will need this to link to the high score page.  nav element? -->
-            <div id="timer">Time: 0</div> <!-- populate this with a funtion in js -->
+            <div id=highScorePage onclick="">View high score</div> <!-- will need this to link to the high score page.  nav element? -->
+            <div id="timer">Time: 75</div> <!-- populate this with a funtion in js -->
         </header>
         <main id="quizMain">
             <h2 id="question">
@@ -47,7 +47,7 @@
     <!-- Quiz complete section -->
     <section id="completePage"> 
         <header>
-            <div>View high score</div> <!-- will need this to link to the high score page.  nav element? -->
+            <div id=highScorePage onclick="">View high score</div> <!-- will need this to link to the high score page.  nav element? -->
         </header>
         <main id="completeMain">
             <h2>All done!</h2>
@@ -77,6 +77,7 @@
         </main>
     </section>
 
+    <script src="./assets/js/questions.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

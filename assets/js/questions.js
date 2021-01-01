@@ -1,22 +1,87 @@
-export var quizQuestions = [{
-    question: "Who won the 1993 NCAA Men's National Championship?",
-    pickA: "Duke",
-    pickB: "Michigan",
-    pickC: "Kentucky",
-    pickD: "North Carolina",
+// below is the array that holds all the quiz questions
+// questions are taken off of https://www.tutorialspoint.com/javascript/ and https://www.topzenith.com/2020/04/javascript-quiz-with-questions-and-answers.html
+var quizQuestions = [{
+    question: "Which built-in method adds one or more elements to the end of an array and returns the new length of the array?",
+    pickA: "last()",
+    pickB: "put()",
+    pickC: "push()",
+    pickD: "none of the above",
+    answer: "pickC"},
+{
+    question: "Which built-in method returns the string representation of the number's value?",
+    pickA: "toValue()",
+    pickB: "toNumber()",
+    pickC: "toString",
+    pickD: "none of the above",
+    answer: "pickC"},
+{
+    question: "Which of the following function of String object extracts a section of a string and returns a new string?",
+    pickA: "slice()",
+    pickB: "split()",
+    pickC: "replace()",
+    pickD: "search()",
+    answer: "pickA"},
+    {
+    question: "Which of the following function of String object returns the calling string value converted to upper case?",
+    pickA: "toLocaleUpperCase()",
+    pickB: "toUpperCase()",
+    pickC: "toString()",
+    pickD: "substring()",
+    answer: "pickB"},
+/*    {
+    question: "Which of the following function of Array object returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found?",
+    pickA: "indexOf()",
+    pickB: "join()",
+    pickC: "lastIndexOf()",
+    pickD: "map()",
+    answer: "pickA"},
+    {
+    question: "Which of the following function of Array object adds and/or removes elements from an array?",
+    pickA: "toSource()",
+    pickB: "sort()",
+    pickC: "upshift()",
+    pickD: "splice()",
     answer: "pickD"},
-{
-    question: "What year did the NCAA tournament field expand to 64 teams?",
-    pickA: "1971",
-    pickB: "1979",
-    pickC: "1985",
-    pickD: "1989",
-    answer: "1985"},
-{
-    question: "In the 1990 NCAA Tourney, #1 seed Michigan State was taken into overtime and almost became the first #1 to lose to a #16.  Who took them to OT?",
-    pickA: "Murry State",
-    pickB: "Harvard",
-    pickC: "Butler",
-    pickD: "Hampton",
-    answer: "Murry State"}
+    {
+    question: "What is the HTML tag under which one can write javaScript code?",
+    pickA: "<javascript>...</javascript>",
+    pickB: "<script>...</script>",
+    pickC: "<scripted>...</scripted>",
+    pickD: "<js>...</js>",
+    answer: "pickB"},
+    {
+    question: "Which of the following is the correct syntax to display 'purduesports.com' in an alert box?",
+    pickA: "alertbox('purduesports.com')",
+    pickB: "msgbox('purduesports.com')",
+    pickC: "alert('purduesports.com')",
+    pickD: "msg('purduesports.com')",
+    answer: "pickC"},
+    {
+    question: "What is the difference between '==' and '==='?",
+    pickA: "Both B & C",
+    pickB: "Both operators are the same",
+    pickC: "'==' checks only for equality in value whereas '===' is a strictre equality test",
+    pickD: "None of the above",
+    answer: "pickC"},
+    {
+    question: "What is the output of below? 33 == 33.0",
+    pickA: "True",
+    pickB: "33",
+    pickC: "False",
+    pickD: "None of the above",
+    answer: "pickA"},
+    {
+    question: "Javascript is ______________ language.",
+    pickA: "an interpreted",
+    pickB: "a compiled",
+    pickC: "a translated",
+    pickD: "none of the above",
+    answer: "pickA"},
+    {
+    question: "What is the correct file extension for javaScript files?",
+    pickA: ".java",
+    pickB: ".js",
+    pickC: ".javascript",
+    pickD: ".script",
+    answer: "pickB"},    */
 ];

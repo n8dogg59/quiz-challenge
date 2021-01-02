@@ -95,7 +95,7 @@ header div {
     font-size: 32px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
     header {
         padding: 35px 4%;
     }

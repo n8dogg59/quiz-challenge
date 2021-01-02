@@ -47,7 +47,7 @@ function runQuiz() {
     timerLeft = setInterval(function(){
         timerDiv.textContent = "Time: " + timerCountdown;
         timerCountdown--;
-        if (timerCountdown === 0) {
+        if (timerCountdown <= 0) {
             quizComplete();
         }},1000);
     iterateQuizArray();
@@ -145,6 +145,15 @@ function goHomepage() {
     questionArrayIndex = 0;
     console.log(initialsInput.value);
     initialsInput.value = '';
+}
+
+function goHighScorePage() {
+    homepageEL.style.display = "none";
+    quizPageEl.style.display = "none";
+    completePageEl.style.display = "none";
+    highScoresPage.style.display = "block";
+    clearInterval(timerLeft);
+
 }
 
 startButton.addEventListener("click", runQuiz);

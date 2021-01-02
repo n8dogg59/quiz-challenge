@@ -28,7 +28,7 @@ var quizQuestions = [{
     pickC: "toString()",
     pickD: "substring()",
     answer: "pickB"},
-    /*{
+    {
     question: "Which of the following function of Array object returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found?",
     pickA: "indexOf()",
     pickB: "join()",
@@ -139,5 +139,5 @@ var quizQuestions = [{
     pickB: "obj.method[]",
     pickC: "obj.method()",
     pickD: "obj-method",
-    answer: "pickC"}, */
+    answer: "pickC"}, 
 ];

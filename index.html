@@ -11,7 +11,7 @@
     <!-- Homepage section-->
     <section id="homepage"> 
         <header>
-            <div id="highScorePage" onclick="">View high score</div> <!-- will need this to link to the high score page.  nav element? -->
+            <div id="highScorePage" onclick="goHighScorePage()">View high score</div> <!-- will need this to link to the high score page.  nav element? -->
         </header>
         <main>
             <h2>Coding Quiz Challenge</h2>
@@ -25,7 +25,7 @@
     <!-- Quiz page section-->
     <section id="quizPage"> 
         <header>
-            <div id=highScorePage onclick="">View high score</div> <!-- will need this to link to the high score page.  nav element? -->
+            <div id=highScorePage onclick="goHighScorePage()">View high score</div> <!-- will need this to link to the high score page.  nav element? -->
             <div id="timer">Time: 75</div> <!-- populate this with a funtion in js -->
         </header>
         <main id="quizMain">
@@ -47,7 +47,7 @@
     <!-- Quiz complete section -->
     <section id="completePage"> 
         <header>
-            <div id=highScorePage onclick="">View high score</div> <!-- will need this to link to the high score page.  nav element? -->
+            <div id=highScorePage onclick="goHighScorePage()">View high score</div> <!-- will need this to link to the high score page.  nav element? -->
         </header>
         <main id="completeMain">
             <h2>All done!</h2>
@@ -55,7 +55,7 @@
                 Your final score is: <span id="score">score.</span>
             </p>
             <form class="entered">
-                <label for="initials">Enter Initials: </label>
+                <label for="initials">Enter Name or Initials: </label>
                 <input type="text" id="initials" name="initials" value="">
                 <button id="initialBtn">Submit</button><!-- should add the initials and to an array in js file-->
             </form>
@@ -68,8 +68,8 @@
             <h2>High Scores</h2>
             <ol type="1" id="highList">
                 <li class="highListItem" id="highListItem">
-                    <div id="highInitials">test1</div>
-                    <div id="highScore">test2</div>
+                    <div id="highInitials"></div>
+                    <div id="highScore"></div>
                 </li>
             </ol>
             <button type="button" id="homepageBtn">Homepage</button>

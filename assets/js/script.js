@@ -15,6 +15,7 @@ var submitScore = document.getElementById("initialBtn");
 var initialsInput = document.getElementById("initials");
 var highScoresPage = document.getElementById("highScores");
 var highListEl = document.getElementById("highList");
+var highListItemEl = document.getElementById("highListItem");
 var highInitialsDiv = document.getElementById("highInitials");
 var highScoreDiv = document.getElementById("highScore");
 var homepageButton = document.getElementById("homepageBtn");
@@ -61,12 +62,6 @@ function quizComplete() {
     console.log(score);
 }
 
-function highScorePageList() {
-    debugger;
-    completePageEl.style.display = "none";
-    highScoresPage.style.display = "block"; 
-}
-
 submitScore.addEventListener("click", function submitUserScore() {
     if (initialsInput.value === "") {
         alert("You must enter your initials.")
@@ -82,9 +77,27 @@ submitScore.addEventListener("click", function submitUserScore() {
         debugger;
         localStorage.setItem("highScoreList", JSON.stringify(highScoreList));
         debugger;
+        homepageEL.style.display = "none";
+        quizPageEl.style.display = "none";
+        completePageEl.style.display = "none";
+        highScoresPage.style.display = "block";
         highScorePageList();        
     }
 });
+
+function highScorePageList() {
+    debugger; 
+    highListEl.innerHTML = "";
+    var scores = JSON.parse(localStorage.getItem("highScoreList")) || [];
+    for (i = 0; i < scores.length; i++) {
+        var newInitialsDiv = document.createElement("div");
+        var newScoreDiv = document.createElement("div");
+        newInitialsDiv.textContent = scores[i].currentName;
+        newScoreDiv.textContent = scores[i].score;
+        highInitialsDiv.appendChild(newInitialsDiv);
+        highScoreDisplayScore.appendChild(newScoreDiv);
+    }
+}
 
 function gradeAnswer(userAnswer){
     correctAnswer = quizQuestions[questionArrayIndex].answer;
@@ -94,7 +107,7 @@ function gradeAnswer(userAnswer){
     if (correctAnswer === userAnswer){
         score++;
         console.log(score);
-        rightWrongEl.textContent = "CORRECT";
+        rightWrongEl.textContent = "CORRECT!";
         questionArrayIndex++;
     } 
     else {
@@ -111,6 +124,20 @@ function gradeAnswer(userAnswer){
     else {
         quizComplete();
     }
-};
+}
+
+function clearAllScores() {
+    localStorage.removeItem("highScoreList");
+    highListEl.innerHTML = "";
+}
+
+function goHomepage() {
+    homepageEL.style.display = "block";
+    quizPageEl.style.display = "none";
+    completePageEl.style.display = "none";
+    highScoresPage.style.display = "none";
+}
 
 startButton.addEventListener("click", runQuiz);
+clearScoresButton.addEventListener("click", clearAllScores);
+homepageButton.addEventListener("click", goHomepage);

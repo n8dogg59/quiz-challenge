@@ -11,7 +11,7 @@ var quizQuestions = [{
     question: "Which built-in method returns the string representation of the number's value?",
     pickA: "toValue()",
     pickB: "toNumber()",
-    pickC: "toString",
+    pickC: "toString()",
     pickD: "none of the above",
     answer: "pickC"},
 {
@@ -28,7 +28,7 @@ var quizQuestions = [{
     pickC: "toString()",
     pickD: "substring()",
     answer: "pickB"},
-/*    {
+    /*{
     question: "Which of the following function of Array object returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found?",
     pickA: "indexOf()",
     pickB: "join()",
@@ -83,5 +83,61 @@ var quizQuestions = [{
     pickB: ".js",
     pickC: ".javascript",
     pickD: ".script",
-    answer: "pickB"},    */
+    answer: "pickB"},    
+    {
+    question: "What label catches all values except those specified?",
+    pickA: "otherwise",
+    pickB: "default",
+    pickC: "any",
+    pickD: "all",
+    answer: "pickB"},
+    {
+    question: "Which of the following is not a property of the window object?",
+    pickA: "document",
+    pickB: "menu",
+    pickC: "navigator",
+    pickD: "history",
+    answer: "pickB"},   
+    {
+    question: "Which of the followig is NOT a valid function call?",
+    pickA: "var x=myfunc();",
+    pickB: "myfunc();",
+    pickC: "x=myfunc()",
+    pickD: "myfunc",
+    answer: "pickD"},   
+    {
+    question: "Which event is specific to the keyboard?",
+    pickA: "onclick",
+    pickB: "onkeyboardpress",
+    pickC: "onfocus",
+    pickD: "onkeydown",
+    answer: "pickD"},
+    {
+    question: "To see if three variables are all equal we would use",
+    pickA: "A=B=C",
+    pickB: "(A==B) && (B==C)",
+    pickC: "(A==B) & (B==C)",
+    pickD: "(A=B) && (B=C)",
+    answer: "pickB"},  
+    {
+    question: "Which event do you use to run something after the page has finished loading?",
+    pickA: "onfinished",
+    pickB: "unload",
+    pickC: "onload",
+    pickD: "oncomplete",
+    answer: "pickC"}, 
+    {
+    question: "The code to obtain a random number between 5 and 9 inclusive is",
+    pickA: "Math.floor((Math.random() * 5) + 4",
+    pickB: "Math.floor((Math.random() * 4) + 4",
+    pickC: "Math.floor((Math.random() * 4) + 4",
+    pickD: "Math.floor((Math.random() * 5) + 5",
+    answer: "pickD"}, 
+    {
+    question: "You define a method using",
+    pickA: "obj.method",
+    pickB: "obj.method[]",
+    pickC: "obj.method()",
+    pickD: "obj-method",
+    answer: "pickC"}, */
 ];

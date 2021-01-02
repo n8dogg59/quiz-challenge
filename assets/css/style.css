@@ -28,6 +28,7 @@ header div {
     padding: 25px;
     border-radius: 28px;
     margin: 35px;
+    font-size: 35px;
 }
 
 #quizPage {
@@ -57,7 +58,7 @@ header div {
     padding: 8px;
     margin: 15px;
     border-radius: 5px;
-    width: 250px;
+    width: 350px;
 }
 
 #completePage {
@@ -69,19 +70,18 @@ header div {
     margin: 0 25%;
 }
 
-#completePage h2 {
-    font-size: 32px;
-}
-
 #completePage form, p {
     font-size: 24px;
 }
 
 #completePage input {
     font-size: 18px;
-    border-radius: 5px;
 }
 
+#initialBtn {
+    font-size: 24px;
+    margin: 15px 0px;
+}
 #highScores {
     display: none;
 }
@@ -94,3 +94,66 @@ header div {
 #scoreMain h2 {
     font-size: 32px;
 }
+
+@media screen and (max-width: 1200px) {
+    header {
+        padding: 35px 4%;
+    }
+    
+    #homepage main h2 {
+        font-size: 36px;
+    }
+    
+    #homepage main p {
+        font-size: 22px;
+        padding: 0 10%;
+    }
+    
+    #startBtn {
+        padding: 15px;
+        border-radius: 18px;
+        font-size: 24px;
+    }
+    
+    #quizMain {
+        text-align: center;
+        margin: 0 10%;
+    }
+    
+    #question {
+        font-size: 28px;
+    }
+    #rightWrong {
+        font-size: 36px;
+    }
+    
+    #answerButtons {
+        justify-content: center;
+    }
+    
+    .answerBtn {
+        font-size: 18px;
+        padding: 6px;
+        margin: 10px;
+        border-radius: 4px;
+        width: 250px;
+    }
+    
+    #completeMain {
+        text-align: left;
+        margin: 0 10%;
+    }
+    
+    #completePage h2 {
+        font-size: 32px;
+    }
+    
+    #completePage form, p {
+        font-size: 18px;
+    }
+    
+    #completePage input {
+        font-size: 18px;
+        border-radius: 5px;
+    }
+}    

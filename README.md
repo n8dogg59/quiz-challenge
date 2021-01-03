@@ -1,7 +1,7 @@
 # Code Quiz Challenge
 
 ## Purpose
-Develop a quiz to text the users knowledge of javaScript fundamentals.  Keep the users score then list that in order on a high score page.
+Develop a quiz to test the users knowledge of javaScript fundamentals.  Keep the user's score then list that in order on a high score page.
 
 ## Features
 * From the homepage the user will be able to either start the quiz or see the scores on the high score page.
@@ -25,8 +25,8 @@ https://github.com/n8dogg59/quiz-challenge
 ## Screenshot
 ![](./assets/pictures/homepage.jpg)
 ![](./assets/pictures/quizQuestion.jpg)
-![](./Develop/initialsPage.jpg)
-![](./Develop/highScorePage.jpg)
+![](./assets/pictures/initialsPage.jpg)
+![](./assets/pictures/highScorePage.jpg)
 
 ### Contribution
 Created by Nate Schroeder

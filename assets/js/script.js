@@ -50,6 +50,7 @@ function runQuiz() {
         if (timerCountdown <= 0) {
             quizComplete();
         }},1000);
+    rightWrongEl.textContent = "";
     iterateQuizArray();
 }
 
@@ -153,7 +154,7 @@ function goHighScorePage() {
     completePageEl.style.display = "none";
     highScoresPage.style.display = "block";
     clearInterval(timerLeft);
-
+    highScorePageList();
 }
 
 startButton.addEventListener("click", runQuiz);
